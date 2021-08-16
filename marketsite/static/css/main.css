@@ -1,0 +1,146 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,p,a{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(1, 44, 64);
+	line-height: 1em;
+
+}
+
+p{
+	font-size: 1.2em;
+	font-weight:500;
+}
+
+header{
+
+}
+
+
+.bg-shadow{
+
+
+	background-color: rgb(225, 203, 205);
+	/*background-color: rgb(143, 143, 201); */
+	/*background: rgba(255,255,255,0.7);*/
+
+}
+
+.first-photo{
+	width:100%;
+	max-height:100%;
+}
+
+.advan{
+
+	/*color:rgb(116, 131, 180);*/
+	color: rgb(1, 44, 64);
+}
+
+.advan:hover{
+
+	color: rgb(21, 64, 84);
+}
+
+.p-advan{
+	font-size:1.9em;
+	font-weight:700;
+	display:initial;
+	color: rgb(1, 44, 64);
+	outline:none;
+}
+
+.p-advan:hover{
+	color: rgb(21, 64, 84);
+	outline:none;
+
+}
+
+.h1-header{
+	font-weight: 500;
+	color: rgb(1, 44, 64);
+}
+.p-header{
+	color: rgba(1, 44, 64,0.8);
+	line-height: 1.2em;
+
+}
+
+.low-cost{
+	background: rgb(239, 92, 40);
+}
+
+.order{
+	border:2px solid rgb(1, 44, 64);
+	font-size:1.7em;
+	font-weight:700;
+}
+
+.order:hover{
+	background: rgb(1, 44, 64);
+	color: rgb(240, 240, 240);
+}
+
+.div-use{
+	text-align: center;
+	color: rgb(1, 44, 64);
+}
+.div-use:hover{
+	color: rgb(21, 64, 84);
+}
+
+
+.lasting-row{
+	display:flex;
+}
+
+
+
+.img-lasting{
+	max-width:100%;
+	max-height:100%;
+}
+
+.img-comfort{
+	max-width:100%;
+	max-height:100%;
+}
+
+.line-through{
+	text-decoration: line-through;
+}
+
+.img-chek{
+ width:100%;
+ height:100%;
+}
+
+.chek .col{
+	height:100%;
+}
+.h-m{
+	height:100%;
+}
+.chek{
+	text-align: center;
+}
+.chek-div{
+	height:100%;
+	width:100%;
+	background: #fff;
+}
+
+
+.form{
+	justify-content: center;
+	display:block;
+}
+
+.btn-order{
+	padding:0.4em;
+	font-size:1.3em;
+	font-weight: 500;
+}
+

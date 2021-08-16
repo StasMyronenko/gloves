@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Нітрилові рукавички	</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+
+<meta name="theme-color" content="#7952b3">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      body{
+			font-family: 'Roboto', sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6,p,a{
+			font-family: 'Roboto', sans-serif;
+			color: rgb(1, 44, 64);
+			line-height: 1em;
+
+		}
+
+		p{
+			font-size: 1.2em;
+			font-weight:500;
+		}
+
+		header{
+
+		}
+
+
+		.bg-shadow{
+
+
+			background-color: rgb(225, 203, 205);
+			/*background-color: rgb(143, 143, 201); */
+			/*background: rgba(255,255,255,0.7);*/
+
+		}
+
+		.first-photo{
+			width:100%;
+			max-height:100%;
+		}
+
+		.advan{
+
+			/*color:rgb(116, 131, 180);*/
+			color: rgb(1, 44, 64);
+		}
+
+		.advan:hover{
+
+			color: rgb(21, 64, 84);
+		}
+
+		.p-advan{
+			font-size:1.9em;
+			font-weight:700;
+			display:initial;
+			color: rgb(1, 44, 64);
+			outline:none;
+		}
+
+		.p-advan:hover{
+			color: rgb(21, 64, 84);
+			outline:none;
+
+		}
+
+		.h1-header{
+			font-weight: 500;
+			color: rgb(1, 44, 64);
+		}
+		.p-header{
+			color: rgba(1, 44, 64,0.8);
+			line-height: 1.2em;
+
+		}
+
+		.low-cost{
+			background: rgb(239, 92, 40);
+		}
+
+		.order{
+			border:2px solid rgb(1, 44, 64);
+			font-size:1.7em;
+			font-weight:700;
+		}
+
+		.order:hover{
+			background: rgb(1, 44, 64);
+			color: rgb(240, 240, 240);
+		}
+
+		.div-use{
+			text-align: center;
+			color: rgb(1, 44, 64);
+		}
+		.div-use:hover{
+			color: rgb(21, 64, 84);
+		}
+
+
+		.lasting-row{
+			display:flex;
+		}
+
+
+
+		.img-lasting{
+			max-width:100%;
+			max-height:100%;
+		}
+
+		.img-comfort{
+			max-width:100%;
+			max-height:100%;
+		}
+
+		.line-through{
+			text-decoration: line-through;
+		}
+
+		.img-chek{
+		 width:100%;
+		 height:100%;
+		}
+
+		.chek .col{
+			height:100%;
+		}
+		.h-m{
+			height:100%;
+		}
+		.chek{
+			text-align: center;
+		}
+		.chek-div{
+			height:100%;
+			width:100%;
+			background: #fff;
+		}
+
+
+		.form{
+			justify-content: center;
+			display:block;
+		}
+
+		.btn-order{
+			padding:0.4em;
+			font-size:1.3em;
+			font-weight: 500;
+		}
+
+
+		      @media (min-width: 768px) {
+		        .bd-placeholder-img-lg {
+		          font-size: 3.5rem;
+		        }
+		      }
+		      
+    </style>
+
+
+  </head>
+<body>
+
+<header>
+<div class="bg-shadow">
+
+  <section class="py-5 container bg-green">
+  	<div class="row mt-3">
+
+  		<div class="col-xl-5">
+        	<h1 class="h1-header">Шукаєте рукавички нітрилові <span class="low-cost">недорого</span>?</h1>
+     	</div>
+      <div class="col-lg-2"></div>
+    	<div class="col-lg-6 pt-3">
+        	<p class="p-header">Сьогодні такі аксесуари надзвичайно популярні в області косметології, б'юті-сфері, стоматології, промисловості, та й просто в побуті.</p>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="col-12">
+    		<!--<img src="{% static '/img/bg.jpg' %}" class="first-photo">-->
+    	</div>
+    </div>
+    <div class="row ">
+  		<div class = "pt-3 col-12">
+			<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-hand-thumbs-up-fill advan" viewBox="0 0 16 16">
+			  <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.964.22.817.533 2.512.062 4.51a9.84 9.84 0 0 1 .443-.05c.713-.065 1.669-.072 2.516.21.518.173.994.68 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.162 3.162 0 0 1-.488.9c.054.153.076.313.076.465 0 .306-.089.626-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.826 4.826 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.616.849-.231 1.574-.786 2.132-1.41.56-.626.914-1.279 1.039-1.638.199-.575.356-1.54.428-2.59z"/>
+			</svg>
+
+				<p class="p-advan">Гарна якість</p>
+
+		</div>
+
+
+
+  		<div class = "pt-3 col-12">
+
+            	<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-award-fill advan" viewBox="0 0 16 16">
+  					<path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"></path>
+  					<path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"></path>
+				</svg>
+				<p class="p-advan">Гарантія кращої ціни</p>
+
+		</div>
+
+  		<div class = "pt-3 col-xl-7">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-bicycle advan" viewBox="0 0 16 16">
+  					<path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"></path>
+				</svg>
+
+				<p class="p-advan">Швидка доставка</p>
+
+		</div>
+		<div class="pt-4 col-5">
+				<button type="button" class="btn order" data-bs-toggle="modal" data-bs-target="#order">Замовити</button>
+
+		</div>
+     </div>
+
+  </section>
+</div>
+</header>
+<main>
+	<section class="container py-5">
+		<div class="row ">
+			<div class="col-sm-7 col-lg-6 col-xl-5 col-xxl-4 mx-auto">
+				<h1 class="h1-use">Області застосування</h1>
+			</div>
+		</div>
+		<div class="row pt-5">
+			<div class="col-lg-3 col-6 div-use">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
+ 					<path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5l-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134l.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196l.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+				</svg>
+  				<p class="pt-3">Beauty</p>
+			</div>
+			<div class="col-lg-3 col-6 div-use">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+  					<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+				</svg>
+  				<p class="pt-3">Прибирання</p>
+			</div>
+			<div class="col-lg-3 col-6 div-use">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+  					<path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+			</svg>
+			<p class="pt-3">Ремонт</p>
+			</div>
+			<div class="col-lg-3 col-6 div-use">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-tree-fill" viewBox="0 0 16 16">
+  					<path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5z"/>
+				</svg>
+				<p class="pt-3">Садівництво</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="bg-shadow">
+		<section class="lasting container py-5">
+			<div class="row featurette lasting-row">
+	      		<div class="col-md-7 lasting-col align-self-center ">
+	        		<h1 class="align-middle lasting-h2 ">Міцний матеріал</h1>
+	        		<p class="lead p-lasting ">Від латексних виробів нітрилові рукавички відрізняються більшою стійкістю до проколів, різних механічних пошкоджень, а також широкого спектру хімікатів. Забезпечують високу стійкість до спиртів, спиртовмісних речовин і дизенфікуючих засобів</p>
+
+	      		</div>
+	     		 <div class="col-md-5">
+	        			<img src="{% static '/img/lasting.jpg' %}" class="img-lasting">
+	      		</div>
+	    	</div>
+
+		</section>
+	</div>
+
+	<section class="container py-5 comfort">
+
+	<div class="row featurette">
+      <div class="col-md-7 order-md-2 align-self-center ">
+        <h1 class="featurette-heading lasting-h2 text-end">Комфорт у використанні</h1>
+        <p class="lead p-lasting text-end">Такі вироби щільно прилягають до руки, створюючи тим самим комфортні відчуття і знижуючи втому рук.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static '/img/comfort.jpg' %}" class="img-comfort">
+      </div>
+    </div>
+	</section>
+<div class="bg-shadow">
+	<section class="container chek pt-1 pb-4">
+	<div class="row">
+		<div class="col-xl-4 col-lg-6 mt-4">
+        <img src="{% static '/img/chek1.jpg' %}" class="img-chek">
+
+      </div>
+		<div class="col-xl-4 col-lg-6 d-flex justify-content-center mt-4">
+			<div class="chek-div">
+				<div class="card-body">
+       			<h1 class="card-title pricing-card-title"><small class="text-muted"><span class="line-through">650 грн</span> -23%</small></h1>
+		        <h1 class="card-title pricing-card-title pb-3">500 грн</h1>
+		        <p >Від 5 упаковок: 480 грн</p>
+		        <p >Від 10 упаковок: 450 грн</p>
+
+        		<button type="button" class="order btn mt-5 " data-bs-toggle="modal" data-bs-target="#order">Замовити</button>
+      </div>
+			</div>
+		</div>
+		<div class="col-xl-4 col-lg-6 mt-4">
+			<img src="{% static '/img/chek2.jpg' %}" class="img-chek">
+		</div>
+	</div>
+	</section>
+</div>
+
+
+
+	<div class="modal fade modal-fullscreen-sm-down" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-fullscreen-md-down">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+			<form class="form" method="POST">
+                {% csrf_token %}
+			  <div class="mb-3">
+			    <input type="text" name="name" class="form-control form-text" id="form-text" placeholder="Прізвище ім'я">
+			  </div>
+			  <div class="mb-3">
+			    <input type="tel" name="tel" class="form-control" id="tel" maxlength="10" placeholder="Номер телефону">
+			  </div>
+			  <div class="mb-3">
+			    <input type="text" name="add_info" class="form-control form-text" id="form-text" placeholder="Додаткова інформація">
+			</div>
+			  <div class="mb-3">
+			  	<label for="exampleInputPassword1" class="form-label">Кількість упаковок</label>
+			  	<input type="number" name="count" class="form-control" max="1000" >
+			  </div>
+			  <div class="mb-3">
+			  	<label for="exampleInputPassword1" class="form-label">Спосіб доставки</label>
+				<select name="delivery" class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example">
+				  <option value="1">Укрпошта</option>
+				  <option value="2">Нова пошта</option>
+				</select>
+			</div>
+			 <div class="mb-3">
+			  	<label for="exampleInputPassword1" class="form-label">Розмір</label>
+				<select name="size" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+				  <option value="1">S</option>
+				  <option value="2">M</option>
+				  <option value="2">L</option>
+				</select>
+			</div>
+
+			  <button type="submit" class="btn order btn-order d-flex " >Замовити</button>
+			</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+ </main>
+
+
+<!-- Full screen modal -->
+
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
